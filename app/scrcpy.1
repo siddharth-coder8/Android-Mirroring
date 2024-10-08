@@ -4,12 +4,12 @@ android-mirroring \- Display and control your Android device
 
 
 .SH SYNOPSIS
-.B scrcpy
+.B android-mirroring
 .RI [ options ]
 
 
 .SH DESCRIPTION
-.B scrcpy
+.B android-mirroring
 provides display and control of Android devices connected on USB (or over TCP/IP). It does not require any root access.
 
 
@@ -17,7 +17,7 @@ provides display and control of Android devices connected on USB (or over TCP/IP
 
 .TP
 .B \-\-always\-on\-top
-Make scrcpy window always on top (above other windows).
+Make android-mirroring window always on top (above other windows).
 
 .TP
 .BI "\-\-audio\-bit\-rate " value
@@ -137,7 +137,7 @@ Also see \fB\-e\fR (\fB\-\-select\-tcpip\fR).
 
 .TP
 .BI "\-\-disable\-screensaver"
-Disable screensaver while scrcpy is running.
+Disable screensaver while android-mirroring is running.
 
 .TP
 .BI "\-\-display\-buffer " ms
@@ -219,7 +219,7 @@ Also see \fB\-\-mouse\fR and \fB\-\-gamepad\fR.
 
 .TP
 .B \-\-kill\-adb\-on\-close
-Kill adb when scrcpy terminates.
+Kill adb when android-mirroring terminates.
 
 .TP
 .B \-\-legacy\-paste
@@ -324,19 +324,19 @@ Disable audio playback on the computer.
 
 .TP
 .B \-\-no\-cleanup
-By default, scrcpy removes the server binary from the device and restores the device state (show touches, stay awake and power mode) on exit.
+By default, android-mirroring removes the server binary from the device and restores the device state (show touches, stay awake and power mode) on exit.
 
 This option disables this cleanup.
 
 .TP
 .B \-\-no\-clipboard\-autosync
-By default, scrcpy automatically synchronizes the computer clipboard to the device clipboard before injecting Ctrl+v, and the device clipboard to the computer clipboard whenever it changes.
+By default, android-mirroring automatically synchronizes the computer clipboard to the device clipboard before injecting Ctrl+v, and the device clipboard to the computer clipboard whenever it changes.
 
 This option disables this automatic synchronization.
 
 .TP
 .B \-\-no\-downsize\-on\-error
-By default, on MediaCodec error, scrcpy automatically tries again with a lower definition.
+By default, on MediaCodec error, android-mirroring automatically tries again with a lower definition.
 
 This option disables this behavior.
 
@@ -366,7 +366,7 @@ Disable video playback on the computer.
 
 .TP
 .B \-\-no\-window
-Disable scrcpy window. Implies --no-video-playback and --no-control.
+Disable android-mirroring window. Implies --no-video-playback and --no-control.
 
 .TP
 .BI "\-\-orientation " value
@@ -404,7 +404,7 @@ Passing the option without argument is equivalent to passing "true".
 
 .TP
 .B \-\-power\-off\-on\-close
-Turn the device screen off when closing scrcpy.
+Turn the device screen off when closing android-mirroring.
 
 .TP
 .B \-\-prefer\-text
@@ -458,7 +458,7 @@ Supported names are currently "direct3d", "opengl", "opengles2", "opengles", "me
 
 .TP
 .B \-\-require\-audio
-By default, scrcpy mirrors only the video if audio capture fails on the device. This option makes scrcpy fail if audio is enabled but does not work.
+By default, android-mirroring mirrors only the video if audio capture fails on the device. This option makes android-mirroring fail if audio is enabled but does not work.
 
 .TP
 .BI "\-s, \-\-serial " number
@@ -470,11 +470,11 @@ Turn the device screen off immediately.
 
 .TP
 .BI "\-\-shortcut\-mod " key\fR[+...]][,...]
-Specify the modifiers to use for scrcpy shortcuts. Possible keys are "lctrl", "rctrl", "lalt", "ralt", "lsuper" and "rsuper".
+Specify the modifiers to use for android-mirroring shortcuts. Possible keys are "lctrl", "rctrl", "lalt", "ralt", "lsuper" and "rsuper".
 
 Several shortcut modifiers can be specified, separated by ','.
 
-For example, to use either LCtrl or LSuper for scrcpy shortcuts, pass "lctrl,lsuper".
+For example, to use either LCtrl or LSuper for android-mirroring shortcuts, pass "lctrl,lsuper".
 
 Default is "lalt,lsuper" (left-Alt or left-Super).
 
@@ -482,15 +482,15 @@ Default is "lalt,lsuper" (left-Alt or left-Super).
 .B \-t, \-\-show\-touches
 Enable "show touches" on start, restore the initial value on exit.
 
-It only shows physical touches (not clicks from scrcpy).
+It only shows physical touches (not clicks from android-mirroring).
 
 .TP
 .BI "\-\-tcpip\fR[=\fIip\fR[:\fIport\fR]]
 Configure and reconnect the device over TCP/IP.
 
-If a destination address is provided, then scrcpy connects to this address before starting. The device must listen on the given TCP port (default is 5555).
+If a destination address is provided, then android-mirroring connects to this address before starting. The device must listen on the given TCP port (default is 5555).
 
-If no destination address is provided, then scrcpy attempts to find the IP address and adb port of the current device (typically connected over USB), enables TCP/IP mode if necessary, then connects to this address before starting.
+If no destination address is provided, then android-mirroring attempts to find the IP address and adb port of the current device (typically connected over USB), enables TCP/IP mode if necessary, then connects to this address before starting.
 
 .TP
 .BI "\-\-time\-limit " seconds
@@ -498,19 +498,19 @@ Set the maximum mirroring time, in seconds.
 
 .TP
 .BI "\-\-tunnel\-host " ip
-Set the IP address of the adb tunnel to reach the scrcpy server. This option automatically enables \fB\-\-force\-adb\-forward\fR.
+Set the IP address of the adb tunnel to reach the android-mirroring server. This option automatically enables \fB\-\-force\-adb\-forward\fR.
 
 Default is localhost.
 
 .TP
 .BI "\-\-tunnel\-port " port
-Set the TCP port of the adb tunnel to reach the scrcpy server. This option automatically enables \fB\-\-force\-adb\-forward\fR.
+Set the TCP port of the adb tunnel to reach the android-mirroring server. This option automatically enables \fB\-\-force\-adb\-forward\fR.
 
 Default is 0 (not forced): the local port used for establishing the tunnel will be used.
 
 .TP
 .B \-v, \-\-version
-Print the version of scrcpy.
+Print the version of android-mirroring.
 
 .TP
 .BI "\-V, \-\-verbosity " value
@@ -564,7 +564,7 @@ Default is display.
 
 .TP
 .B \-w, \-\-stay-awake
-Keep the device on while scrcpy is running, when the device is plugged in.
+Keep the device on while android-mirroring is running, when the device is plugged in.
 
 .TP
 .B \-\-window\-borderless
@@ -599,7 +599,7 @@ Set the initial window height.
 Default is 0 (automatic).
 
 .SH EXIT STATUS
-.B scrcpy
+.B android-mirroring
 will exit with code 0 on normal program termination. If an initial
 connection cannot be established, the exit code 1 will be returned. If the
 device disconnects while a session is active, exit code 2 will be returned.
@@ -749,16 +749,16 @@ Path to adb.
 Device serial to use if no selector (\fB-s\fR, \fB-d\fR, \fB-e\fR or \fB\-\-tcpip=\fIaddr\fR) is specified.
 
 .TP
-.B SCRCPY_ICON_PATH
+.B android-mirroring_ICON_PATH
 Path to the program icon.
 
 .TP
-.B SCRCPY_SERVER_PATH
+.B android-mirroring_SERVER_PATH
 Path to the server binary.
 
 
 .SH AUTHORS
-.B scrcpy
+.B android-mirroring
 is written by Romain Vimont.
 
 This manual page was written by
@@ -769,7 +769,7 @@ for the Debian Project (and may be used by others).
 
 
 .SH "REPORTING BUGS"
-Report bugs to <https://github.com/Genymobile/scrcpy/issues>.
+Report bugs to <https://github.com/Genymobile/android-mirroring/issues>.
 
 .SH COPYRIGHT
 Copyright \(co 2018 Genymobile <https://www.genymobile.com>
@@ -779,4 +779,4 @@ Copyright \(co 2018\-2024 Romain Vimont <rom@rom1v.com>
 Licensed under the Apache License, Version 2.0.
 
 .SH WWW
-<https://github.com/Genymobile/scrcpy>
+<https://github.com/Genymobile/android-mirroring>

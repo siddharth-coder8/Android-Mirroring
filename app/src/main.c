@@ -12,7 +12,7 @@
 
 #include "cli.h"
 #include "options.h"
-#include "scrcpy.h"
+#include "android-mirroring.h"
 #include "usb/scrcpy_otg.h"
 #include "util/log.h"
 #include "util/net.h"

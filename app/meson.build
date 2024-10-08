@@ -28,7 +28,7 @@ src = [
     'src/packet_merger.c',
     'src/receiver.c',
     'src/recorder.c',
-    'src/scrcpy.c',
+    'src/android-mirroring.c',
     'src/screen.c',
     'src/server.c',
     'src/version.c',
@@ -178,7 +178,7 @@ configure_file(configuration: conf, output: 'config.h')
 
 src_dir = include_directories('src')
 
-executable('scrcpy', src,
+executable('android-mirroring', src,
            dependencies: dependencies,
            include_directories: src_dir,
            install: true,

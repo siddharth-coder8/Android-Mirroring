@@ -1,4 +1,4 @@
-project('scrcpy', 'c',
+project('Android-Mirroring', 'c',
         version: '2.7',
         meson_version: '>= 0.48',
         default_options: [

@@ -9,10 +9,10 @@ BEGIN
     BLOCK "040904E4"
     BEGIN
       VALUE "FileDescription", "Display and control your Android device"
-      VALUE "InternalName", "android-mirroring"
+      VALUE "InternalName", "Android-Mirroring"
       VALUE "LegalCopyright", "SVECTOR"
-      VALUE "OriginalFilename", "android-mirroring.exe"
-      VALUE "ProductName", "android-mirroring"
+      VALUE "OriginalFilename", "Android-Mirroring.exe"
+      VALUE "ProductName", "Android-Mirroring"
       VALUE "ProductVersion", "2.7"
     END
   END

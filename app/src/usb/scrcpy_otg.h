@@ -4,7 +4,7 @@
 #include "common.h"
 
 #include "options.h"
-#include "scrcpy.h"
+#include "android-mirroring.h"
 
 enum scrcpy_exit_code
 scrcpy_otg(struct scrcpy_options *options);

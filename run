@@ -22,4 +22,4 @@ fi
 
 SCRCPY_ICON_PATH="app/data/icon.png" \
 SCRCPY_SERVER_PATH="$BUILDDIR/server/scrcpy-server" \
-"$BUILDDIR/app/scrcpy" "$@"
+"$BUILDDIR/app/android-mirroring" "$@"
