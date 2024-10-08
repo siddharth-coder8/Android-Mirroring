@@ -1,10 +1,10 @@
-**This GitHub repo (<https://github.com/Genymobile/scrcpy>) is the only official
+**This GitHub repo (<https://github.com/Genymobile/Android Mirroring>) is the only official
 source for the project. Do not download releases from random websites, even if
-their name contains `scrcpy`.**
+their name contains `Android Mirroring`.**
 
-# scrcpy (v2.7)
+# Android Mirroring (v2.7)
 
-<img src="app/data/icon.svg" width="128" height="128" alt="scrcpy" align="right" />
+<img src="app/data/icon.svg" width="128" height="128" alt="Android Mirroring" align="right" />
 
 _pronounced "**scr**een **c**o**py**"_
 
@@ -26,7 +26,7 @@ It focuses on:
  - **user benefits**: no account, no ads, no internet required
  - **freedom**: free and open source software
 
-[lowlatency]: https://github.com/Genymobile/scrcpy/pull/646
+[lowlatency]: https://github.com/Genymobile/Android Mirroring/pull/646
 
 Its features include:
  - [audio forwarding](doc/audio.md) (Android 11+)
@@ -65,9 +65,9 @@ In that case, you need to enable [an additional option][control] `USB debugging
 it using a keyboard and mouse. Rebooting the device is necessary once this
 option is set.
 
-[control]: https://github.com/Genymobile/scrcpy/issues/70#issuecomment-373286323
+[control]: https://github.com/Genymobile/Android Mirroring/issues/70#issuecomment-373286323
 
-Note that USB debugging is not required to run scrcpy in [OTG mode](doc/otg.md).
+Note that USB debugging is not required to run Android Mirroring in [OTG mode](doc/otg.md).
 
 
 ## Get the app
@@ -87,36 +87,36 @@ Here are just some common examples.
    a physical keyboard:
 
     ```bash
-    scrcpy --video-codec=h265 --max-size=1920 --max-fps=60 --no-audio --keyboard=uhid
-    scrcpy --video-codec=h265 -m1920 --max-fps=60 --no-audio -K  # short version
+    Android Mirroring --video-codec=h265 --max-size=1920 --max-fps=60 --no-audio --keyboard=uhid
+    Android Mirroring --video-codec=h265 -m1920 --max-fps=60 --no-audio -K  # short version
     ```
 
  - Record the device camera in H.265 at 1920x1080 (and microphone) to an MP4
    file:
 
     ```bash
-    scrcpy --video-source=camera --video-codec=h265 --camera-size=1920x1080 --record=file.mp4
+    Android Mirroring --video-source=camera --video-codec=h265 --camera-size=1920x1080 --record=file.mp4
     ```
 
  - Capture the device front camera and expose it as a webcam on the computer (on
    Linux):
 
     ```bash
-    scrcpy --video-source=camera --camera-size=1920x1080 --camera-facing=front --v4l2-sink=/dev/video2 --no-playback
+    Android Mirroring --video-source=camera --camera-size=1920x1080 --camera-facing=front --v4l2-sink=/dev/video2 --no-playback
     ```
 
  - Control the device without mirroring by simulating a physical keyboard and
    mouse (USB debugging not required):
 
     ```bash
-    scrcpy --otg
+    Android Mirroring --otg
     ```
 
  - Control the device using gamepad controllers plugged into the computer:
 
     ```bash
-    scrcpy --gamepad=uhid
-    scrcpy -G  # short version
+    Android Mirroring --gamepad=uhid
+    Android Mirroring -G  # short version
     ```
 
 ## User documentation
@@ -148,18 +148,18 @@ documented in the following pages:
  - [Build instructions](doc/build.md)
  - [Developers](doc/develop.md)
 
-[wiki]: https://github.com/Genymobile/scrcpy/wiki
+[wiki]: https://github.com/Genymobile/Android Mirroring/wiki
 
 
 ## Articles
 
-- [Introducing scrcpy][article-intro]
-- [Scrcpy now works wirelessly][article-tcpip]
-- [Scrcpy 2.0, with audio][article-scrcpy2]
+- [Introducing Android Mirroring][article-intro]
+- [Android Mirroring now works wirelessly][article-tcpip]
+- [Android Mirroring 2.0, with audio][article-Android Mirroring2]
 
-[article-intro]: https://blog.rom1v.com/2018/03/introducing-scrcpy/
-[article-tcpip]: https://www.genymotion.com/blog/open-source-project-scrcpy-now-works-wirelessly/
-[article-scrcpy2]: https://blog.rom1v.com/2023/03/scrcpy-2-0-with-audio/
+[article-intro]: https://blog.rom1v.com/2018/03/introducing-Android Mirroring/
+[article-tcpip]: https://www.genymotion.com/blog/open-source-project-Android Mirroring-now-works-wirelessly/
+[article-Android Mirroring2]: https://blog.rom1v.com/2023/03/Android Mirroring-2-0-with-audio/
 
 ## Contact
 
@@ -168,17 +168,17 @@ You can open an [issue] for bug reports, feature requests or general questions.
 For bug reports, please read the [FAQ](FAQ.md) first, you might find a solution
 to your problem immediately.
 
-[issue]: https://github.com/Genymobile/scrcpy/issues
+[issue]: https://github.com/Genymobile/Android Mirroring/issues
 
 You can also use:
 
- - Reddit: [`r/scrcpy`](https://www.reddit.com/r/scrcpy)
- - Twitter: [`@scrcpy_app`](https://twitter.com/scrcpy_app)
+ - Reddit: [`r/Android Mirroring`](https://www.reddit.com/r/Android Mirroring)
+ - Twitter: [`@Android Mirroring_app`](https://twitter.com/Android Mirroring_app)
 
 
 ## Donate
 
-I'm [@rom1v](https://github.com/rom1v), the author and maintainer of _scrcpy_.
+I'm [@rom1v](https://github.com/rom1v), the author and maintainer of _Android Mirroring_.
 
 If you appreciate this application, you can [support my open source
 work][donate]:
